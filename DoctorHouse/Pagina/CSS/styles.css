@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  background-color: #E3F2FD; 
+  color: #333; 
+ overflow-x: hidden;
+}
+header {
+  background-color: #2a527a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  
+  
+}
+header img {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+     
+  
+}
+.perfil1 {
+  margin-left: 950px;
+}
+.nave{
+  background-color:#EDECEC ; 
+  height: 40px;
+  margin: 0; /* Elimina el margen superior entre el nav y el header */
+  padding: 0;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+
+}
+
+
+nav ul {
+  list-style: none; /* Elimina las viñetas de la lista */
+  padding: 0; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center; 
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+nav ul li {
+  font-size: 18px;
+  white-space: nowrap; /*Para que no se dividan las palabras*/
+  margin: auto; /* Espacio horizontal entre los elementos */
+ 
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+  font-weight: bold; /* Hace los enlaces en negrita */
+  padding: 5px 10px; 
+  border: 1px solid transparent; 
+  transition: all 0.3s ease; /* Añade transición suave al hover */
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #0a0a0a; /* Subraya el enlace al pasar el mouse */
+}
+
+main {
+  padding: 20px; 
+}
+
+
+
+
+
+/* Estilos para la sección de información */
+.info {
+  display: flex; /* Coloca la imagen y el texto en una fila */
+  justify-content: space-between; /* Distribuye espacio entre la imagen y el texto */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  margin-bottom: 40px; 
+}
+
+/* Estilos para la imagen de la sección informativa */
+.info .image img {
+  max-width: 700px; /* Ancho máximo de la imagen */
+  border-radius: 10px; 
+}
+
+
+.brindamos {
+  max-width: 500px; /* Ancho máximo del contenedor de texto */
+  margin-left: 20px; /* Margen izquierdo para separar la imagen del texto */
+}
+
+.brindamos h2 {
+  font-size: 84px; 
+  color: #4259CE; 
+}
+
+.brindamos p {
+  font-size: 28px; 
+}
+
+
+.mission-vision {
+  display: flex; /* Coloca la misión y la visión en una fila */
+  justify-content: space-around; /* Distribuye espacio entre ambos elementos */
+  margin-bottom: 40px; /* Espacio inferior después de la sección */
+}
+
+
+.mission, .vision {
+  width: 45%; 
+  text-align: center; 
+  background-color: #f4f4f4; 
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+
+
+.mission h2, .vision h2 {
+  font-size: 81px;
+  color: #000; 
+}
+
+.mission p, .vision p {
+  font-size: 26px; 
+}
+
+
+
+
+footer {
+  background-color: #32376a; 
+  color: #fff; 
+  text-align: center; 
+  padding: 20px; 
+  margin-top: 10px; 
+}
+
+footer a {
+  color: #fff; 
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
+
+
+.espec-box {
+  width: 95%; 
+  height: auto;
+  text-align: center; 
+  background-color: #f4f4f4; 
+  padding: 20px; 
+  border-radius: 10px; 
+}
+
+.espec-box h3 {
+  font-size: 60px; /* Tamaño del texto de la especialidad */
+  color: #1304e4 ; /* Color del texto */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;/*cualquiera afuera de este se oculta, para hacer el efecto*/
+}
+
+.carousel-track {
+  display: flex; 
+  animation: scroll 40s infinite linear;
+}
+
+.carousel-slide {
+  min-width: calc(100% / 3); /* Ajusta esto si necesitas más o menos espacio para más o menos slides visibles */
+  box-sizing: border-box; 
+  padding: 0 10px; /* Añade espacio a los lados de cada slide */
+}
+
+
+.carousel-slide h3{
+  font-size: 40px; 
+  color: #000;
+
+}
+
+.carousel-track img{
+  max-width: 200px;
+}
+
+/* Animación para desplazamiento automático */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  100% { transform: translateX(0); }
+}
+

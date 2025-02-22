@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+dialog {
+    border: 2px solid #4CAF50;
+    padding: 20px;
+}
+
+img {
+    margin-top: 10px;
+}
+
+hr {
+    margin-top: 20px;
+}

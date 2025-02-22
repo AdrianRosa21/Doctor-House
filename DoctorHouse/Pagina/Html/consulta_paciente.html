@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../image/unnamed.png" type="image/x-icon">
+  <title>DoctorHouse</title>
+  <link rel="stylesheet" href="../CSS/consulta_paciente.css">
+</head>
+<body>
+  <header>
+      <img src="../image/unnamed.png" alt="DoctorHouse Logo" class="logo">
+      <div class="perfil1">
+        <a href="Paciente_perfil.html"><img alt="foto de perfil" src="../image/perfil.png"></a>
+      </div>
+  </header>
+
+  <main class="container">
+    <nav class="nave">
+      <ul>
+        <li><a href="index_pac.html">Página principal</a></li>
+        <li><a href="consulta_paciente.html">Consultas</a></li>
+        <li><a href="Paciente_perfil.html">Perfil</a></li>
+        <li><a href="recomendaciones.html">Recomendaciones</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <div class="inbox">
+        <h2>Inbox</h2>
+        <div class="message" onclick="showMessage('mensaje1')">
+          <p>Doctor/a: César Elías</p>
+        </div>
+        <div class="message" onclick="showMessage('mensaje3')">
+          <p>Doctor/a: Rebeca Leiva</p>
+        </div>
+        <div class="message" onclick="showMessage('mensaje4')">
+          <p>Doctor/a: Rosa Rivas</p>
+        </div>
+        <div class="message" onclick="showMessage('mensaje2')">
+          <p>Doctor/a: William Mejía</p>
+        </div>
+        <input type="button" id="nuevo_mensaje" onclick="n_mensaje()" value="+ Redactar nuevo mensaje">
+      </div>
+
+      <div class="important" id="mensajeSeleccionado">
+        <div class="message-body"></div>
+      </div>
+    </section>
+
+    <footer>
+        
+      <p>Rodrigo Adrián Rosa Rivas #21 | César Daniel Elías Villanueva #8 | Victoria Rebeca Leiva Padilla #11 | William Ariel Mejía Mira #14</p>
+      
+      <p>Redes sociales: <a href="https://www.facebook.com/colegiopadrearrupeoficial">Facebook</a> | <a href="https://www.instagram.com/colegiopadrearrupeoficial/">Instagram</a></p>
+      
+      <p>+503 6832 7882 | doctor.house@gmail.com</p>
+  </footer>
+  </main>
+
+  <script src="../JS/consulta_paciente.js"></script>
+</body>
+</html>

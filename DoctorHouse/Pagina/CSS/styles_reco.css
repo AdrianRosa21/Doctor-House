@@ -1,0 +1,235 @@
+body {
+  font-family: Arial, sans-serif; /* Fuente global para el texto */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+  background-color: #E3F2FD; 
+  color: #333; 
+ overflow-x: hidden;
+}
+
+header {
+  background-color: #2a527a;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+header img {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
+     
+  
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 220px;
+}
+.perfil1 {
+  margin-left: 950px;
+}
+
+/* Estilos para el navegador */
+.nave{
+  background-color:#EDECEC ; 
+  height: 40px;
+  margin: 0; /* Elimina el margen superior entre el nav y el header */
+  padding: 0;
+  display: flex;
+  align-items: center; /* Centra verticalmente el contenido */
+
+}
+
+
+nav ul {
+  list-style: none; /* Elimina las viñetas de la lista */
+  padding: 0; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center; 
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+nav ul li {
+  font-size: 18px;
+  white-space: nowrap; /*Para que no se dividan las palabras*/
+  margin: auto; /* Espacio horizontal entre los elementos */
+ 
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0); /* Color de los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-weight: bold; /* Hace los enlaces en negrita */
+  padding: 5px 10px; /* Espaciado interno de los enlaces */
+  border: 1px solid transparent; /* Bordes invisibles por defecto */
+  transition: all 0.3s ease; /* Añade transición suave al hover */
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #0a0a0a; /* Subraya el enlace al pasar el mouse */
+}
+  
+  /* Estilos para la sección principal */
+  main {
+    padding: 20px; /* Espaciado interno en todo el contenido principal */
+    
+  }
+
+/* Estilo para el título principal del cuadro */
+.titulo {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.titulo h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+h3{
+  font-size: 25px;
+}
+/* Contenedor de los elementos informativos */
+.informativos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 30px;
+  align-items: stretch;
+  min-height: 350px; /* o el valor que necesites */
+}
+
+/* Estilo para los contenedores individuales (tarjetas) */
+.informativo {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Parte inferior de la tarjeta (blanco) */
+.informativo-body {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    flex-grow: 1; /* Asegura que el texto ocupe el espacio restante y empuje hacia abajo */
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto */
+    justify-content: center; /* Centra horizontalmente el texto */
+}
+
+/* Parte superior de la tarjeta (azul) */
+.informativo-header {
+    background-color: #64B5F6;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.informativo-header img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.informativo-header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #32376a; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 10px; 
+  }
+  
+  footer a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+  }
+
+  button {
+    cursor: pointer;
+    border-radius: 10px;
+
+    background-color: #ced3ea;
+    color: #000000;
+    padding: 20px 35px;
+    margin: 30px 0 20px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;  
+    font-weight: 700;  
+    transition: box-shadow 0.25s ease-in-out;
+    box-shadow: 0px 0px 0 #fff;
+    text-align: center;
+  }
+  
+  button:hover {
+    box-shadow: inset 0 0 0 50px #9baddf;
+  }
+
+
+  dialog {
+    max-width: 700px;
+    max-height: 750px;
+    padding: 40px 70px;
+    border: 8px solid #2212b3;
+    background-color: #FAFAFA;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+  
+  }
+
+
+dialog h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;/*Para que se vea mas gruesa la letra*/
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #0f427c;
+}
+dialog img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+dialog .contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+dialog li{
+  color: #000000;
+  font-size: 22px;
+}
+
+dialog::backdrop {
+  background: rgba(206, 216, 234, 0.9);
+}
+

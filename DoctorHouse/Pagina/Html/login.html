@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/unnamed.png">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+    <header>
+        <img alt="Logo de DoctorHouse" height="100" src="../image/unnamed.png" width="100"/>
+        <h1>Bienvenidos a DoctorHouse: Cuidado Médico a tu Alcance</h1>
+        <ul><a href="index.html">Volver al menú</a></ul>
+    </header>
+    <main>
+        <form class="iniciar-sesion" id="login" action="../PHP/login.php" method="post">
+            <h2>Iniciar sesión</h2>
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <label for="mostrar"> Mostrar contraseña
+            <input type="checkbox" id="mostrar"></label>
+            <label for="option">Escoge tu rol correspondiente:</label>
+            <select required id="select" name="role">
+                <option value="paciente" id="paciente">Paciente</option>
+                <option value="doctor" id="doctor">Doctor/a</option>
+                <option value="enfermera" id="enfermera">Enfermer@</option>
+            </select>
+            <button class="button" type="submit">Iniciar sesión</button>
+            <p>¿No tienes una cuenta?</p>
+            <p><a href="registrarse.html">Registrate aquí</a></p>
+        </form>
+    </main>
+    <script type="text/javascript">
+        const inputContraseña = document.getElementById('password');
+        const checkboxMostrarContraseña = document.getElementById('mostrar');
+        
+        checkboxMostrarContraseña.addEventListener('change', function() {
+            inputContraseña.type = this.checked? 'text' : 'password';
+        });
+        
+        
+    </script>
+    <footer>
+        
+        <p>Rodrigo Adrián Rosa Rivas #21 | César Daniel Elías Villanueva #8 | Victoria Rebeca Leiva Padilla #11 | William Ariel Mejía Mira #14</p>
+        
+        <p>Redes sociales: <a href="https://www.facebook.com/colegiopadrearrupeoficial">Facebook</a> | <a href="https://www.instagram.com/colegiopadrearrupeoficial/">Instagram</a></p>
+        
+        <p>+503 6832 7882 | doctor.house@gmail.com</p>
+    </footer>
+</body>
+</html>

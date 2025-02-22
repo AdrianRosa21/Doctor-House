@@ -1,0 +1,112 @@
+body{
+    background-image: url('../image/fondoIR.jpg');
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: Arial, sans-serif;
+    
+    
+}
+header img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+       
+    
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 220px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+.registrar{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+}
+.registrar input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.registrar label{
+    display: flex;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    margin: 10%;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 18px;
+}
+.register{
+    color: black;
+    text-decoration: none;
+}
+label[for="mostrar"]{
+    height: 40px;
+    width: 20px;
+}
+input[type="checkbox"] {
+    margin-left: 230px;
+}
+button{
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor:pointer;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+footer {
+    background-color: #32376a; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+    margin-top: 20px; 
+  }
+  
+  footer a {
+    color: #fff; 
+    text-decoration: none; 
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../image/unnamed.png">
+    <link rel="stylesheet" href="../CSS/registro.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <header>
+        <img alt="Logo de DoctorHouse" height="100" src="../image/unnamed.png" width="100"/>
+        <h1>Bienvenidos a DoctorHouse: Cuidado Médico a tu Alcance</h1>
+        <ul><a href="index.html">Volver al menú</a></ul>
+    </header>
+    <main>
+        <form class="registrar" id="registrarse">
+            <h2>Registrarse</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+            <label for="edad">Fecha de nacimiento:</label>
+            <input type="date" id="edad" name="edad" required>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Ej. 12345678" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Ej. example@gmail.com" required>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese un nombre de usuario" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Ingrese una contraseña segura" required>
+            <label for="contrasena">Confirmar contraseña:</label>
+            <input type="password" id="confirmar" name="confirmar" placeholder="Ingrese de nuevo la contraseña" required>
+            <label for="mostrar"> Mostrar contraseña
+            <input type="checkbox" id="mostrar"></label>
+            <button class="button" type="submit" >Registrarse</button>
+            <p>¿Ya tienes una cuenta?</p>
+            <p><a href="login.html">Inicia sesión</a></p>
+    </main>  
+    <script type="text/javascript">
+        const inputContraseña = document.getElementById('password');
+        const checkboxMostrarContraseña = document.getElementById('mostrar');
+        
+        checkboxMostrarContraseña.addEventListener('change', function() {
+            inputContraseña.type = this.checked? 'text' : 'password';
+        });
+        const inputContraseña2 = document.getElementById('confirmar');
+        const checkboxMostrarContraseña2 = document.getElementById('mostrar');
+        
+        checkboxMostrarContraseña2.addEventListener('change', function() {
+            inputContraseña2.type = this.checked? 'text' : 'password';
+        });
+
+        function validateForm() {
+            const contra = document.getElementById('password').value;
+            const confirmContra = document.getElementById('confirmar').value;
+            
+            if (contra !== confirmContra) {
+                alert("Las contraseñas no coinciden");
+               event.preventDefault();
+            }
+        }
+        
+    </script>
+    <footer>
+        <p>Rodrigo Adrián Rosa Rivas #21 | César Daniel Elías Villanueva #8 | Victoria Rebeca Leiva Padilla #11 | William Ariel Mejía Mira #14</p>
+        <p>Redes sociales: <a href="https://www.facebook.com/colegiopadrearrupeoficial">Facebook</a> | <a href="https://www.instagram.com/colegiopadrearrupeoficial/">Instagram</a></p>
+        <p>+503 6832 7882 | doctor.house@gmail.com</p>
+    </footer>
+</body>
+</html>
