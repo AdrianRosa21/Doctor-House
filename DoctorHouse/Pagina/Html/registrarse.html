@@ -11,10 +11,11 @@
     <header>
         <img alt="Logo de DoctorHouse" height="100" src="../image/unnamed.png" width="100"/>
         <h1>Bienvenidos a DoctorHouse: Cuidado Médico a tu Alcance</h1>
-        <ul><a href="index.html">Volver al menú</a></ul>
+        <ul><a href="../index.html">Volver al menú</a></ul>
     </header>
     <main>
-        <form class="registrar" id="registrarse">
+        <form class="registrar" onsubmit="return validateForm(event);" id="registrarse" method="post"
+        action="../PHP/registrarse.php">
             <h2>Registrarse</h2>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
@@ -26,18 +27,20 @@
             <input type="number" id="telefono" name="telefono" placeholder="Ej. 12345678" required>
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" placeholder="Ej. example@gmail.com" required>
-            <label for="usuario">Nombre de usuario:</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Ingrese un nombre de usuario" required>
+            <label for="historial">Antecedentes médicos:</label>
+            <textarea id="historial" name="historial" required placeholder="Aquí ingrese las enfermedades que padece o ha padecido" cols="40" rows="20"></textarea>
+            <label for="nombre_usuario">Nombre de usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Ingrese un nombre de usuario" required>
             <label for="contrasena">Contraseña:</label>
-            <input type="password" id="password" name="password" placeholder="Ingrese una contraseña segura" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña de min. 10 carácteres" required>
             <label for="contrasena">Confirmar contraseña:</label>
             <input type="password" id="confirmar" name="confirmar" placeholder="Ingrese de nuevo la contraseña" required>
             <label for="mostrar"> Mostrar contraseña
             <input type="checkbox" id="mostrar"></label>
-            <button class="button" type="submit" >Registrarse</button>
+            <a id="link" href="../PHP/pago.php"></a><button class="button" type="submit" onclick="validateForm();">Registrarse</button></a>
             <p>¿Ya tienes una cuenta?</p>
-            <p><a href="login.html">Inicia sesión</a></p>
-    </main>  
+            <p><a href="../PHP/login.php">Iniciar sesión</a></p>
+</main>  
     <script type="text/javascript">
         const inputContraseña = document.getElementById('password');
         const checkboxMostrarContraseña = document.getElementById('mostrar');
@@ -56,16 +59,25 @@
             const contra = document.getElementById('password').value;
             const confirmContra = document.getElementById('confirmar').value;
             
-            if (contra !== confirmContra) {
+            if (contra.length < 10) {
+                alert("Ingrese una contraseña valida");
+                event.preventDefault();
+            } else{
+                if (contra !== confirmContra) {
                 alert("Las contraseñas no coinciden");
                event.preventDefault();
             }
+            }
+            
         }
         
     </script>
     <footer>
+        
         <p>Rodrigo Adrián Rosa Rivas #21 | César Daniel Elías Villanueva #8 | Victoria Rebeca Leiva Padilla #11 | William Ariel Mejía Mira #14</p>
+        
         <p>Redes sociales: <a href="https://www.facebook.com/colegiopadrearrupeoficial">Facebook</a> | <a href="https://www.instagram.com/colegiopadrearrupeoficial/">Instagram</a></p>
+        
         <p>+503 6832 7882 | doctor.house@gmail.com</p>
     </footer>
 </body>

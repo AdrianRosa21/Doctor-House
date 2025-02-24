@@ -1,7 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; 
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    background-color: #E3F2FD; 
+    color: #333; 
+   overflow-x: hidden;
   }
   header {
     background-color: #2a527a;
@@ -64,92 +67,75 @@ body {
   nav ul li a:hover {
     border-bottom: 2px solid #0a0a0a; /* Subraya el enlace al pasar el mouse */
   }
-  header {
-    background-color: #2a527a;
-    color: white;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  
+  main {
+    padding: 20px; 
   }
   
-  header img {
-    height: 100px;
-    width: 100px;
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  
-  
-  .content {
-    display: flex;
-    background-image: url('../image/fondo.jpg');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border-radius: 5px;
-  }
-  
-  .important {
-    background-color: #ffffff;
-    opacity: 70%;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  .inbox h2, .important h2 {
-    margin-bottom: 10px;
-  }
 
-  .inbox h2{
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-
-  .inbox{
-    background-color: #007bff;
-    background-size: auto;
-    opacity: 70%;
-    padding: 20px;
-    height: 100%;
-  }
-  
-  .message {
-    background-color: #303c8a;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-  }
-  
-  .message p {
-    color: #ffffff;
-  }
-  
-  input[type="button"] {
-    background-color: #de94da;
-    color: #000000;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   footer {
-    background-color: #3D62E5; 
+    background-color: #32376a; 
     color: #fff; 
     text-align: center; 
     padding: 20px; 
+    margin-top: 10px; 
   }
   
   footer a {
     color: #fff; 
-    text-decoration: none; 
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
   }
   
   footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
   }
-  mark{
-    background-color: #56bad1;
-  }
+
+.recomendacion{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+}
+button[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor:pointer;
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+button[type="submit"]:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.recomendacion input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.recomendacion label{
+    display: flex;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    margin: 10%;
+    margin-bottom: 3px;
+    margin-top: 6px;
+    font-size: 18px;
+}
+.recomendacion textarea{
+    width: 300px;
+    height: 85px;
+}

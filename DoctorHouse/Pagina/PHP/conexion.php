@@ -1,10 +1,10 @@
 <?php
-session_start();
+
 
 $servername="localhost";
 $username="root";
 $password="";
-$dbname="doctorhouse1";
+$dbname="doctorhouse";
 
 $conn = new mysqli($servername,$username, $password, $dbname);
 
